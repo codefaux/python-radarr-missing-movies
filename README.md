@@ -2,17 +2,17 @@
 
 ## -- A NOTE FROM THE 'AUTHOR' --
 
-As a test, I've been writing this via ChatGPT. __I am not an AI advocate.__ AI can be dangerous, and putting it "in charge" is a mistake. I know Python well enough to work on this code, but getting off the ground is always a challenge, so I wanted to literally just talk ChatGPT through it, to see how the experience went. I discourage using ChatGPT (or any other AI model) when you are not also personally familiar with the material you're asking for. If you don't know what garbage looks like, you can't judge if AI has given you garbage. I'm very encouraged by the results, as I've not modified any of its output by hand, except this note.
+As a test, I've been writing this via ChatGPT, using only a free account. __I am not an AI advocate.__ AI can be dangerous, and putting it "in charge" is a mistake. I know Python well enough to work on this code, but getting off the ground is always a challenge, so I wanted to literally just talk ChatGPT through it, to see how the experience went. I discourage using ChatGPT (or any other AI model) when you are not also personally familiar with the material you're asking for. If you don't know what garbage looks like, you can't judge if AI has given you garbage. I'm very encouraged by the results, as I've not modified any of its output by hand, except this note.
 
 You're welcome to use this code, and submit issues, and I'll also consider feature requests, but I will not accept pull requests as my intent is to make ChatGPT fully responsible for modifications to code.
 
-Here is [a link](https://chatgpt.com/share/67673225-e1ec-8004-8816-3bf31728ff7f) to the actual conversation used to create this code, in case anyone cares to look. I've been informal and sometimes indirect with the AI, intentionally attempting to test the bounds of its comprehension. I may forget to update this link if I make changes, feel free to request an update as an issue.
+Here is [a link](https://chatgpt.com/share/67673225-e1ec-8004-8816-3bf31728ff7f) to the actual conversation used to create the contents of this repository, in case anyone cares to look under the hood. I've been informal and sometimes indirect with the AI, intentionally attempting to test the bounds of its comprehension. I may forget to update this link if I make changes, feel free to request an update as an issue.
 
-I am actually using this on my live system, and I have to say, I'm quite pleased with the results.
+I am actually using this on my live system, and I have to say, I'm quite pleased with the results. I intend to use a similar process as an accelerator for future projects.
 
 Now, on with the show..
 
-# Overview
+## Overview
 This repository provides a Python script to automate searching for missing movies in Radarr. The script interacts with Radarr and SABnzbd APIs to ensure efficient and timely searches. The script avoids redundant searches and respects rate limits to prevent overloading your services.
 
 ## Features
@@ -27,12 +27,18 @@ This repository provides a Python script to automate searching for missing movie
 - Python 3.6 or higher.
 - Installed and running instances of Radarr and SABnzbd.
 - API keys for Radarr and SABnzbd.
+- The `requests` library for Python (install with `pip install requests`).
 
 ## Installation
 Clone the repository:
 ```bash
 git clone https://github.com/codefaux/python-radarr-missing-movies.git
 cd python-radarr-missing-movies
+```
+
+Install required dependencies:
+```bash
+pip install requests
 ```
 
 ## Usage
